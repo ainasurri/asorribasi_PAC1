@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de running Ritme | Fes-te'n soci</title>
+    <meta name="description" content="Formulari d'inscripció com a soci del club de running Ritme">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+    <a class="sr" href="#main">Salteu al contingut principal</a>
+    <header>
+        <div class="container">
+            <h1 class="banner"><a href="index.html">ritme</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="practica-el-running.html">Practica el <span lang="en">running</span></a></li>
+                    <li><a href="rutes.html">Rutes</a></li>
+                    <li class="active"><a href="inscripcio-socis.html">Fes-te'n soci</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <h2 class="center">Feu-me soci del club de <span lang="en">running</span> Ritme</h2>
+            
+            <form name="socis" action="#" method="post">
+                <p class="required">Els camps assenyalats amb * són obligatoris</p>
+                <fieldset>
+                    <legend>Tipus de quota <abbr title="obligatori">*</abbr></legend>
+                    <ul class="radioGroup">
+                        <li>
+                            <input type="radio" name="quota" id="mensual" value="Mensual" required >
+                            <label for="mensual">Mensual (30 €)</label>
+                        </li>
+                        <li>              
+                            <input type="radio" name="quota" id="trimestral" value="Trimestral" required >
+                            <label for="trimestral">Trimestral  (45 €)</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quota" id="anual" value="Anual" required >
+                            <label for="anual">Anual (100 €)</label>
+                        </li>
+                    </ul>                   
+                </fieldset>
+                <fieldset>
+                    <legend>Dades personals i de contacte</legend>
+                    <ul>
+                        <li class="controlInlineHalf">
+                            <label for="nom">Nom <abbr title="obligatori">*</abbr></label>
+                            <input type="text" name="nom" id="nom" value="" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" title="Només caràcters alfabètics. Un mínim de 2 i un màxim de 64 caràcters" required >
+                        </li>
+                        <li class="controlInlineHalf">
+                            <label for="cognoms">Cognoms <abbr title="obligatori">*</abbr></label>
+                            <input type="text" name="cognoms" id="cognoms" value="" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,128}" title="Només caràcters alfabètics. Un mínim de 2 i un màxim de 128 caràcters" required >                           
+                        </li>
+                        <li class="controlInlineHalf">
+                            <label for="correu">Correu electrònic <abbr title="obligatori">*</abbr></label>
+                            <input type="email" name="correu" id="correu" value="" required  class="halfInLine">
+                        </li>
+                        <li class="controlInlineHalf">
+                            <label for="telefon">Telèfon <abbr title="obligatori">*</abbr></label>
+                            <input type="tel" name="telefon" id="telefon" value="" required >
+                        </li>
+                        <li  class="controlInlineHalf">
+                            <label for="datanaixement">Data de naixement <abbr title="obligatori">*</abbr></label>
+                            <input type="date" name="datanaixement" id="datanaixement" value="" required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Altres informacions</legend>
+                    <ul>
+                        <li>
+                            <label for="interes">Per què esteu interessat a fer-vos soci?</label>
+                            <textarea name="interes" id="interes"></textarea>
+                        </li>
+                        <li>
+                            <label for="mitja">Per quin mitjà ens heu conegut?</label>
+                            <select name="mitja" id="mitja" class="half">
+                                <option value="">Seleccioneu una opció</option>
+                                <option value="Premsa">Premsa</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Altre soci">Altre soci</option>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Pagament</legend>
+                    <ul>
+                        <li>
+                            <label for="titular">Titular del compte <abbr title="obligatori">*</abbr></label>
+                            <input type="text" name="titular" id="titular" value="" required >
+                        </li>
+                        <li>
+                            <label for="compte">Número de compte <abbr title="obligatori">*</abbr></label>
+                            <input type="text" name="compte" id="compte" required >
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="outFieldset">
+                    <p class="infoLegal">INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE <b>RITME</b>. <b>Finalitats</b>: recollida de dades per a la inscripció com a soci de l'interessat. <b>Legitimació</b>: Consentiment de l'interessat. <b>Destinataris:</b> No estan previstes cessions de dades a tercers, excepte obligació legal. <b>Drets</b>: Pot retirar el seu consentiment en qualsevol moment, així com accedir, rectificar, suprimir les seves dades i altres drets dirigint-se a <a href="mailto:info@ritme.org">info@ritme.org</a>. <b>Informació Addicional</b>: Pot ampliar la informació en l'enllaç d'<a href="">Avís Legal</a> i <a href="">Política de privacitat</a>.</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="politica" id="politica" value="Acceptacio de política de privacitat i avís legal" required >
+                            <label for="politica">He llegit i accepto la <a href="">política de privacitat</a> <abbr title="obligatori">*</abbr></label>
+                        </li>
+                    </ul>
+                    <button type="submit">Envia</button>
+                </div>
+            </form>
+                      
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>2022 &copy; Nom i cognoms de l'estudiant</p>
+            <ul>
+                <li><a href="">Avís legal</a></li>
+                <li><a href="">Política de privacitat</a></li>
+                <li><a href="">Política de <span lang="en">cookies</span></a></li>
+            </ul>
+        </div>
+    </footer>  
+</body>
+</html>

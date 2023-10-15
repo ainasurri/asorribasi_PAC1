@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="movie-container">
+      <label>Pick a movie:</label>
+      <select id="movie">
+        <!-- <option value="15" selected>Super Movie ($15)</option>
+        <option value="10">HAHA Movie ($10)</option>
+        <option value="5">Explosions Movie ($5)</option>
+        <option value="20">PepaPig 2000 ($20)</option> -->
+      </select>
+      <select id="divisa">
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+        
+      </select>
+    </div>
+  
+      <ul class="showcase">
+        <li>
+          <div class="butaca"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="butaca escollida"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="butaca ocupada"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+  
+      <div class="container">
+        <div class="pantalla"></div>
+  
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+        </div>
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+        </div>
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca ocupada"></div>
+        </div>
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+        </div>
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+        </div>
+        <div class="fila">
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca ocupada"></div>
+          <div class="butaca"></div>
+        </div>
+      </div>
+  
+      <p class="text">
+        You have selected <span id="count">0</span> seats for a price of <span
+          id="total"
+          >0</span
+        >
+      </p>
+
+        <script src="cinema.js"></script>
+    </body>
+</html>
